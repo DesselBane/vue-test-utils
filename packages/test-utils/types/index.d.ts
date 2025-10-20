@@ -180,7 +180,7 @@ export interface VueTestUtilsConfigOptions {
   stubs: Record<string, Component | boolean | string>
   mocks: Record<string, any>
   methods: Record<string, Function>
-  provide?: Record<string, any>,
+  provide?: Record<string | symbol, any>,
   showDeprecationWarnings?: boolean
   deprecationWarningHandler?: Function
 }

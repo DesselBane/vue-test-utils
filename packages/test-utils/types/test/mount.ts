@@ -99,7 +99,7 @@ config.stubs = {
 }
 config.stubs['quuux'] = true
 config.mocks = {
-  foo: 'bar',
+  foo: 'bar'
 }
 config.mocks['foo'] = {
   bar: 'baz'
@@ -109,8 +109,10 @@ config.methods = {
 }
 config.methods['foo'] = () => true
 config.provide = {
-  foo: {}
+  foo: {},
+  [Symbol('injection key')]: {}
 }
+
 config.provide['foo'] = {
   bar: {}
 }
